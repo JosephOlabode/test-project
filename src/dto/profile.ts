@@ -3,7 +3,7 @@ export interface IProfile {
   surname: string;
   other_names: string;
   phone: string;
-  alternative_phone: string;
+  alternative_phone?: string;
   email: string;
   date_of_birth: Date;
   age: number;

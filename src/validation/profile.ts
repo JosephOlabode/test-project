@@ -4,7 +4,7 @@ export const ProfileSchema = Joi.object({
   surname: Joi.string().required(),
   other_names: Joi.string().required(),
   phone: Joi.string().required(),
-  alternative_phone: Joi.string().required(),
+  alternative_phone: Joi.string().empty("").optional(),
   email: Joi.string().email().required(),
   date_of_birth: Joi.date().required(),
   age: Joi.number().required(),
