@@ -11,7 +11,7 @@ export const ProfileSchema = Joi.object({
   tertiary_institution: Joi.string().required(),
   discipline: Joi.string().required(),
   class_of_degree: Joi.string().required(),
-  other_qualifications: Joi.string().required(),
+  other_qualifications: Joi.string().empty("").optional(),
   nysc_status: Joi.string().required(),
   current_location: Joi.string().required(),
   relevant_work_experience: Joi.string().required(),

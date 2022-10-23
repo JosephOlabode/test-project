@@ -10,7 +10,7 @@ export interface IProfile {
   tertiary_institution: string;
   discipline: string;
   class_of_degree: string;
-  other_qualifications: string;
+  other_qualifications?: string;
   nysc_status: string;
   current_location: string;
   relevant_work_experience: string;
